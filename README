@@ -1,0 +1,11 @@
+A:
+	symbols of "int average(int n1, float n2)":000000000040070d T _Z7averageif
+	symbols of "double average(double * n1, double & n2)":00000000004006cd T _Z7averagePdRd
+B:
+	output:1 8
+	       4 8
+	       4 8
+	       8 8
+	because the data type occupy the space(byte):
+	char(1);int(4);float(4);double(8),
+	and the space occupied by a pointer depends on OS:64bit OS->8byte;32bit OS->4byte
